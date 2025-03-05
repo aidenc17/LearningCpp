@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <vector>
 namespace first {
     int x = 1;
 }
@@ -8,6 +8,9 @@ namespace second {
     int x = 2;
 }
 
+//typedef  std::vector<std::pair<std::string, int>> pairlist_t;
+typedef std::string text_t;
+typedef int number_t;
 
 int main() {
 
@@ -98,7 +101,26 @@ int main() {
     using std::cout;
     using std::string;
     //causes less confusion and less likely to cause error, but still steer clear
+    cout << '\n';
 
+
+    //typedef -- replaced mostly by using
+
+    //need to include the #include <vector>
+
+    //also done outside the main function
+    //think like alias to the longer name
+
+
+    std::string firstname = "Aiden";
+
+    //typedef std::string text_t;
+    text_t lastNameUsingTypedef = "Cox";
+
+    //typedef int num_t
+    number_t apples = 5;
+
+    //same can be accomplished using `using text_t = std::string`
 
 
 
