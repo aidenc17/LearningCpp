@@ -122,7 +122,25 @@ int main() {
 
     //same can be accomplished using `using text_t = std::string`
 
+    //type conversion
 
+    int z = 3.14;
+
+    std::cout << z << '\n'; //truncates decimal - IMPLICIT
+
+    double zy = (int) 3.14;
+    std::cout << zy << '\n'; // truncates decimal - EXPLICIT
+
+    char x = 100;
+    std::cout << x << '\n';
+
+    std::cout << (char) 100 << '\n';
+
+    int correct = 8;
+    int questions = 10;
+
+    double score = correct / (double) questions * 100; //type conversions to double otherwise id have int devision = 0%
+    std::cout << score << '\n';
 
 
     return 0;
