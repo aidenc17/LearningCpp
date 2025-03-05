@@ -1,5 +1,14 @@
 #include <iostream>
 
+namespace first {
+    int x = 1;
+}
+
+namespace second {
+    int x = 2;
+}
+
+
 int main() {
 
     // comments in c++
@@ -68,5 +77,31 @@ int main() {
     double circumference = 2 * PI * radius;
 
     std::cout << circumference << "cm" << '\n';
-return 0;
+    std::cout << '\n';
+
+
+    //Namespaces
+
+    //need the namespace outside of main
+    std::cout << first::x << '\n';
+    std::cout << second::x << '\n';
+
+    using namespace std; // legal, but not advised.
+    cout << first::x << '\n';
+    string withoutPrefix = "not advised";
+
+    using namespace first;
+    cout << x << '\n';
+    cout << second::x << '\n';
+
+    //alternative to evil line
+    using std::cout;
+    using std::string;
+    //causes less confusion and less likely to cause error, but still steer clear
+
+
+
+
+
+    return 0;
 }
