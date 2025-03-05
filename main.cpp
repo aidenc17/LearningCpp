@@ -1,6 +1,15 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    // comments in c++
+    /*
+     *
+     *
+     * multiline comment
+     *
+     */
+    std::cout << "I like pizza" << '\n';
+    std::cout << "it's really good!" << '\n';
     return 0;
 }
