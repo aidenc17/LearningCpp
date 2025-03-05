@@ -22,6 +22,8 @@ int main() {
     int days = 45;
 
     std::cout << age << '\n';
+    std::cout << '\n';
+
 
     //double (num w decimal)
     double price = 10.99;
@@ -29,6 +31,7 @@ int main() {
     double temperature = 65.01;
 
     std::cout << price << '\n';
+    std::cout << '\n';
 
 
     //single character
@@ -37,14 +40,16 @@ int main() {
     char currency = '$';
 
     std::cout << grade << '\n';
+    std::cout << '\n';
 
 
     //boolean (true or false)
     bool student = true;
     bool power = false;
     bool forSale = true;
+    std::cout << '\n';
 
-    //strings (objects that repesent a sequence of texts)
+    //strings (objects that represent a sequence of texts)
 
     std::string name = "aiden";
     std::string day = "Tuesday";
@@ -53,7 +58,15 @@ int main() {
 
 
     std::cout << "Hello " << name << '\n';
-    std::cout << "You are " << age << " years old";
+    std::cout << "You are " << age << " years old" << '\n';
+    std::cout << '\n';
 
+    // consts
+    const double PI = 3.14159;
+    //PI = 456;
+    double radius = 10;
+    double circumference = 2 * PI * radius;
+
+    std::cout << circumference << "cm" << '\n';
 return 0;
 }
