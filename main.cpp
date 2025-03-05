@@ -31,5 +31,29 @@ int main() {
     std::cout << price << '\n';
 
 
+    //single character
+    char grade = 'A';
+    char initial = 'A';
+    char currency = '$';
+
+    std::cout << grade << '\n';
+
+
+    //boolean (true or false)
+    bool student = true;
+    bool power = false;
+    bool forSale = true;
+
+    //strings (objects that repesent a sequence of texts)
+
+    std::string name = "aiden";
+    std::string day = "Tuesday";
+    std::string food = "ice cream";
+    std::string stringAddress = "124 you thought street";
+
+
+    std::cout << "Hello " << name << '\n';
+    std::cout << "You are " << age << " years old";
+
 return 0;
 }
