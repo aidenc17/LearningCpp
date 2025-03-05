@@ -55,12 +55,6 @@ build CMakeFiles/LearningCpp.dir/main.cpp.o: CXX_COMPILER__LearningCpp_unscanned
   OBJECT_DIR = CMakeFiles/LearningCpp.dir
   OBJECT_FILE_DIR = CMakeFiles/LearningCpp.dir
 
-build CMakeFiles/LearningCpp.dir/varsAndDataTypes.cpp.o: CXX_COMPILER__LearningCpp_unscanned_Debug /Users/aidencox/git/LearningCpp/varsAndDataTypes.cpp || cmake_object_order_depends_target_LearningCpp
-  DEP_FILE = CMakeFiles/LearningCpp.dir/varsAndDataTypes.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/LearningCpp.dir
-  OBJECT_FILE_DIR = CMakeFiles/LearningCpp.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LearningCpp
@@ -69,7 +63,7 @@ build CMakeFiles/LearningCpp.dir/varsAndDataTypes.cpp.o: CXX_COMPILER__LearningC
 #############################################
 # Link the executable LearningCpp
 
-build LearningCpp: CXX_EXECUTABLE_LINKER__LearningCpp_Debug CMakeFiles/LearningCpp.dir/main.cpp.o CMakeFiles/LearningCpp.dir/varsAndDataTypes.cpp.o
+build LearningCpp: CXX_EXECUTABLE_LINKER__LearningCpp_Debug CMakeFiles/LearningCpp.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/LearningCpp.dir
   POST_BUILD = :
